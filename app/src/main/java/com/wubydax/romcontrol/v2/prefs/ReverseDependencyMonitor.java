@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+package com.wubydax.romcontrol.v2.prefs;
+
+import android.preference.Preference;
+
+/*      Created by Roberto Mariani and Anna Berkovitch, 18/08/2016
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
         the Free Software Foundation, either version 3 of the License, or
@@ -11,12 +14,8 @@
         GNU General Public License for more details.
 
         You should have received a copy of the GNU General Public License
-        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
-<resources>
-	<color name="colorPrimary">#0f0f3a</color>
-	<color name="colorPrimaryDark">#0c0c2e</color>
-	<color name="colorAccent">#a80028</color>
-	<color name="darkBgColor">#0c0c0d</color>
-	<color name="nav_drawer_default_color">?android:textColorPrimary</color>
-	<drawable name="transparentBg">#0000</drawable>
-</resources>
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
+
+interface ReverseDependencyMonitor {
+    void registerReverseDependencyPreference(Preference preference);
+}
